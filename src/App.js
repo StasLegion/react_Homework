@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import CheckboxText from "./components/CheckboxText/CheckboxText.js";
+import checkMarkImg from "./components/CheckboxText/pn.png";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CheckboxText text="Неограниченое количество учеников" imageSrc={checkMarkImg}></CheckboxText>
+        <CheckboxText text="Производительную связь с учениками " imageSrc={checkMarkImg}></CheckboxText>
+        <CheckboxText text="Сообщества" imageSrc={checkMarkImg}></CheckboxText>
+        <CheckboxText text="Конфидециальность и защита" imageSrc={checkMarkImg}></CheckboxText>
     </div>
   );
 }
